@@ -43,9 +43,10 @@
   </section>
 </template>
 
-<script>
+<script scoped>
 import Modal from "../shared/modal/Modal.vue";
 import emailjs from "emailjs-com";
+import "../../assets/styles.css";
 
 export default {
   components: {
@@ -93,8 +94,9 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import "../../assets/styles.css";
 /*Contact*/
 .contact-container {
   display: flex;

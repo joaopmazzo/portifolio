@@ -26,11 +26,14 @@
 
 <script>
 import "boxicons";
+import "../../assets/styles.css";
+
 export default {};
 </script>
 
-<style>
+<style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import "../../assets/styles.css";
 /*footer*/
 footer {
   background-color: #0e2431;

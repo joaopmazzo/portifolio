@@ -24,6 +24,8 @@
 </template>
 
 <script>
+import "../../assets/styles.css";
+
 export default {
   props: {
     url_perfil: String,
@@ -31,8 +33,10 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import "../../assets/styles.css";
+
 /*about*/
 .about-container {
   display: flex;
