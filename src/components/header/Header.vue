@@ -6,7 +6,7 @@
       </div>
       <div>
         <ul class="nav-list">
-          <li><a href="#" class="nav-link text-color">Home</a></li>
+          <li><a href="#home" class="nav-link text-color">Home</a></li>
           <li><a href="#about" class="nav-link text-color">About</a></li>
           <li><a href="#skills" class="nav-link text-color">Skills</a></li>
           <li><a href="#work" class="nav-link text-color">Work</a></li>
