@@ -36,12 +36,7 @@ export default {
 
 /*about*/
 .about-container {
-  display: flex;
-  gap: 8rem;
-}
-
-.about-container-content {
-  align-self: center;
+  gap: 4rem;
 }
 
 .about-container-content h2 {
@@ -49,11 +44,27 @@ export default {
 }
 
 .about-container-img {
-  padding-left: 6rem;
-  width: 200%;
+  margin: 0 auto;
+  width: 90%;
 }
 
 .about-container-img img {
   border-radius: 10px;
+}
+
+@media screen and (min-width: 790px) {
+  .about-container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: initial;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .about-container-img {
+    margin: 0 auto;
+    justify-content: center;
+    width: 60%;
+  }
 }
 </style>
