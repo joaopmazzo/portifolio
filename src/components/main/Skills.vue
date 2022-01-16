@@ -69,7 +69,6 @@ export default {
 
 /*skills*/
 .skills-container {
-  display: flex;
   gap: 2rem;
 }
 
@@ -148,5 +147,13 @@ export default {
 
 .skills-img img {
   border-radius: 10px;
+}
+
+@media screen and (min-width: 790px) {
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: initial;
+  }
 }
 </style>
