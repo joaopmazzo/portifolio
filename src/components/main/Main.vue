@@ -10,18 +10,16 @@
     </div>
 
     <div class="home-social">
-      <div class="home-social-gap">
-        <a
-          href="https://www.linkedin.com/in/jo%C3%A3o-paulo-mazzo-2ab6b21b7/"
-          class="text-color home-social-icon"
-          ><box-icon type="logo" name="linkedin"></box-icon
-        ></a>
-        <a
-          href="https://github.com/joaopmazzo"
-          class="text-color home-social-icon"
-          ><box-icon name="github" type="logo"></box-icon
-        ></a>
-      </div>
+      <a
+        href="https://www.linkedin.com/in/jo%C3%A3o-paulo-mazzo-2ab6b21b7/"
+        class="text-color home-social-icon"
+        ><box-icon type="logo" name="linkedin"></box-icon
+      ></a>
+      <a
+        href="https://github.com/joaopmazzo"
+        class="text-color home-social-icon"
+        ><box-icon name="github" type="logo"></box-icon
+      ></a>
     </div>
 
     <div class="home-img">
@@ -49,7 +47,8 @@ export default {
 @import "../../assets/styles.css";
 /*home*/
 .home {
-  height: calc(100vh - 6rem);
+  position: relative;
+  height: calc(100vh - 2rem);
   row-gap: 2rem;
 }
 
@@ -68,12 +67,8 @@ export default {
 
 .home-social {
   display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-}
-
-.home-social-gap {
-  display: flex;
+  align-self: flex-end;
+  flex-direction: row;
   gap: 30px;
 }
 
@@ -88,7 +83,63 @@ export default {
 
 .home-img {
   position: absolute;
-  right: 10%;
-  bottom: 15%;
+  right: 0;
+  bottom: 0;
+}
+
+.home-img > img {
+  width: 450px;
+}
+
+@media screen and (max-width: 980px) {
+  .home-title {
+    font-size: 3.5rem;
+  }
+
+  .home-title span {
+    color: #303884;
+  }
+
+  .home-social {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    gap: 20px;
+  }
+
+  .home-social-icon box-icon {
+    height: 1.6rem;
+    width: 1.6rem;
+  }
+
+  .home-img > img {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .home-text {
+    margin-top: 3rem;
+  }
+
+  .home-title {
+    font-size: 2.5rem;
+  }
+
+  .home-social {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    gap: 20px;
+  }
+
+  .home-social-icon box-icon {
+    height: 1.4rem;
+    width: 1.4rem;
+  }
+
+  .home-img > img {
+    width: 300px;
+  }
 }
 </style>
