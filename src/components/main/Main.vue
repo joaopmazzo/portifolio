@@ -1,20 +1,15 @@
 <template>
   <section class="home grid" id="home">
     <div class="home-text">
-      <h1 class="home-title" v-scroll-reveal.reset="{ delay: 200 }">
+      <h1 class="home-title">
         Hi, <br />
         I'am <span>João</span><br />
         Web Developer
       </h1>
-      <a
-        href="#contact"
-        class="button text-color"
-        v-scroll-reveal.reset="{ delay: 400 }"
-        >Contact</a
-      >
+      <a href="#contact" class="button text-color">Contact</a>
     </div>
 
-    <div class="home-social" v-scroll-reveal.reset="{ delay: 200 }">
+    <div class="home-social">
       <div class="home-social-gap">
         <a
           href="https://www.linkedin.com/in/jo%C3%A3o-paulo-mazzo-2ab6b21b7/"

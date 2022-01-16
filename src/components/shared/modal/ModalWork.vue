@@ -2,9 +2,7 @@
   <div class="modal-backdrop">
     <div class="modal">
       <section class="modal-body">
-        <button type="button" class="btn-close" @click="close">
-          x
-        </button>
+        <button type="button" class="btn-close" @click="close">x</button>
         <slot name="body" class="body">
           <p>{{ responseMessage }}</p>
         </slot>
@@ -16,17 +14,17 @@
 <script>
 export default {
   props: {
-    responseMessage: String
+    responseMessage: String,
   },
   methods: {
     close() {
       this.$emit("close");
-    }
-  }
+    },
+  },
 };
 </script>
 
-<style>
+<style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 .modal-backdrop {

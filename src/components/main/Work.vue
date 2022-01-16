@@ -4,20 +4,12 @@
 
     <table class="works-table grid">
       <tr>
-        <td
-          v-for="img in img_work1"
-          :key="img.work1"
-          v-scroll-reveal.reset="{ delay: 200 }"
-        >
+        <td v-for="img in img_work1" :key="img.work1">
           <img :src="img.work1" alt="foto de trabalhos" :class="img.scroll1" />
         </td>
       </tr>
       <tr>
-        <td
-          v-for="img in img_work2"
-          :key="img.work2"
-          v-scroll-reveal.reset="{ delay: 300 }"
-        >
+        <td v-for="img in img_work2" :key="img.work2">
           <img :src="img.work2" alt="foto de trabalhos" :class="img.scroll2" />
         </td>
       </tr>

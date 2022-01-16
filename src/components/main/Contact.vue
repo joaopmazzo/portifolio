@@ -10,7 +10,6 @@
           name="name"
           placeholder="Name"
           class="forms-nome"
-          v-scroll-reveal.reset="{}"
         />
         <input
           type="text"
@@ -18,21 +17,13 @@
           name="email"
           placeholder="Email"
           class="forms-email"
-          v-scroll-reveal.reset="{ delay: 200 }"
         />
         <textarea
           class="contact-textarea"
           v-model="message"
           name="message"
-          v-scroll-reveal.reset="{ delay: 200 }"
         ></textarea>
-        <input
-          type="submit"
-          value="Send"
-          class="button"
-          v-scroll-reveal.reset="{ delay: 200 }"
-          @click="showModal"
-        />
+        <input type="submit" value="Send" class="button" @click="showModal" />
       </form>
     </div>
     <modal

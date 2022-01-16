@@ -3,14 +3,11 @@
     <h1 class="section-title">About</h1>
 
     <div class="about-container grid">
-      <div class="about-container-img" v-scroll-reveal.reset>
+      <div class="about-container-img">
         <img :src="url_perfil" alt="foto do Criador" />
       </div>
 
-      <div
-        class="about-container-content"
-        v-scroll-reveal.reset="{ delay: 200 }"
-      >
+      <div class="about-container-content">
         <h2>I'm João Paulo Mazzo</h2>
         <p>
           Hi, I'm João Paulo, I'm 21 and I'm an enthusiast in the world of

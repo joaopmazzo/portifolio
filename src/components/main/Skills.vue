@@ -4,37 +4,35 @@
 
     <div class="skills-container grid">
       <div class="skills-content">
-        <h2 class="skills-subtitle" v-scroll-reveal.reset="{}">
-          Profesional Skills
-        </h2>
-        <p class="skills-text" v-scroll-reveal.reset="{ delay: 200 }">
+        <h2 class="skills-subtitle">Profesional Skills</h2>
+        <p class="skills-text">
           Down here you will see some of my hard skills that I learned along the
           time I have studying.
         </p>
 
         <div class="skills-bar">
-          <div class="skill-data" v-scroll-reveal.reset="{ delay: 300 }">
+          <div class="skill-data">
             <div class="skill-name">
               <box-icon type="logo" name="html5"></box-icon>
               <p>HTML5</p>
             </div>
             <div class="skill-status skill-html"></div>
           </div>
-          <div class="skill-data" v-scroll-reveal.reset="{ delay: 400 }">
+          <div class="skill-data">
             <div class="skill-name">
               <box-icon name="css3" type="logo"></box-icon>
               <p>CSS3</p>
             </div>
             <div class="skill-status skill-css"></div>
           </div>
-          <div class="skill-data" v-scroll-reveal.reset="{ delay: 500 }">
+          <div class="skill-data">
             <div class="skill-name">
               <box-icon name="javascript" type="logo"></box-icon>
               <p>JAVASCRIPT</p>
             </div>
             <div class="skill-status skill-js"></div>
           </div>
-          <div class="skill-data" v-scroll-reveal.reset="{ delay: 600 }">
+          <div class="skill-data">
             <div class="skill-name">
               <box-icon name="git" type="logo"></box-icon>
               <p>GIT</p>
@@ -44,7 +42,7 @@
         </div>
       </div>
 
-      <div class="skills-img" v-scroll-reveal.reset="{ delay: 600 }">
+      <div class="skills-img">
         <img :src="url_work" alt="Homem mexendo no notebook" />
       </div>
     </div>
