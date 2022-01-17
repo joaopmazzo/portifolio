@@ -144,6 +144,10 @@ export default {
 }
 
 @media screen and (max-width: 412px) {
+  .home {
+    height: calc(90vh);
+  }
+
   .home-text {
     margin-top: -1rem;
   }
