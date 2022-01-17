@@ -119,7 +119,7 @@ export default {
 
 @media screen and (max-width: 790px) {
   .home-text {
-    margin-top: 1rem;
+    margin-top: 3rem;
   }
 
   .home-title {
@@ -140,6 +140,12 @@ export default {
 
   .home-img > img {
     width: 320px;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .home-text {
+    margin-top: 0.5rem;
   }
 }
 </style>
