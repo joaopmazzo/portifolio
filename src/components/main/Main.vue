@@ -145,7 +145,7 @@ export default {
 
 @media screen and (max-width: 412px) {
   .home-text {
-    margin-top: 0.5rem;
+    margin-top: -1rem;
   }
 }
 </style>
