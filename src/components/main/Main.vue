@@ -48,7 +48,7 @@ export default {
 /*home*/
 .home {
   position: relative;
-  height: calc(100vh - 2rem);
+  height: calc(100vh - 4rem);
   row-gap: 2rem;
 }
 
