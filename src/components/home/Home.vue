@@ -15,6 +15,8 @@ import Skills from "../main/Skills.vue";
 import Work from "../main/Work.vue";
 import Contact from "../main/Contact.vue";
 import "boxicons";
+import "normalize.css";
+import "../../assets/styles.css";
 
 export default {
   components: {
@@ -33,4 +35,6 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+@import "../../assets/styles.css";
+</style>

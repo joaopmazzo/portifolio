@@ -26,6 +26,7 @@
 
 <script>
 import "boxicons";
+import "normalize.css";
 import "../../assets/styles.css";
 
 export default {};

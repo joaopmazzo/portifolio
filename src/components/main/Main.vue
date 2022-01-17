@@ -29,6 +29,7 @@
 </template>
 
 <script>
+import "normalize.css";
 import "../../assets/styles.css";
 
 export default {
