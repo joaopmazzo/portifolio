@@ -29,6 +29,7 @@
 </template>
 
 <script>
+import "normalize.css";
 import "../../assets/styles.css";
 
 export default {
@@ -48,7 +49,7 @@ export default {
 /*home*/
 .home {
   position: relative;
-  height: calc(100vh - 2rem);
+  height: calc(100vh - 4rem);
   row-gap: 2rem;
 }
 
@@ -88,7 +89,7 @@ export default {
 }
 
 .home-img > img {
-  width: 450px;
+  width: 35rem;
 }
 
 @media screen and (max-width: 980px) {
@@ -113,13 +114,13 @@ export default {
   }
 
   .home-img > img {
-    width: 400px;
+    width: 30rem;
   }
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 860px) {
   .home-text {
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 
   .home-title {
@@ -139,7 +140,21 @@ export default {
   }
 
   .home-img > img {
-    width: 300px;
+    width: 28rem;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .home {
+    height: calc(90vh);
+  }
+
+  .home-text {
+    margin-top: -1rem;
+  }
+
+  .home-img > img {
+    width: 320px;
   }
 }
 </style>

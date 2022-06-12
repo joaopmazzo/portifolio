@@ -22,6 +22,7 @@
 
 <script>
 import "../../assets/styles.css";
+import "normalize.css";
 
 export default {
   props: {

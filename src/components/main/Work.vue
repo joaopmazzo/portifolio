@@ -1,14 +1,14 @@
 <template>
-  <section class="works section" id="work">
+  <section class="works section grid" id="work">
     <h1 class="section-title">Work</h1>
 
-    <table class="works-table grid">
-      <tr>
+    <table class="works-table">
+      <tr class="works-table-row1">
         <td v-for="img in img_work1" :key="img.work1">
           <img :src="img.work1" alt="foto de trabalhos" :class="img.scroll1" />
         </td>
       </tr>
-      <tr>
+      <tr class="works-table-row2">
         <td v-for="img in img_work2" :key="img.work2">
           <img :src="img.work2" alt="foto de trabalhos" :class="img.scroll2" />
         </td>
@@ -18,6 +18,7 @@
 </template>
 
 <script>
+import "normalize.css";
 import "../../assets/styles.css";
 
 export default {
@@ -31,10 +32,6 @@ export default {
         {
           work1: require("../../assets/images/work2.jpg"),
           scroll1: "works-table-img scroll-work-2",
-        },
-        {
-          work1: require("../../assets/images/work3.jpg"),
-          scroll1: "works-table-img scroll-work-3",
         },
       ],
       img_work2: [
@@ -60,14 +57,15 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 @import "../../assets/styles.css";
 /*works*/
-.works-table {
-  border-collapse: separate;
-  border-spacing: 1.2rem 1.2rem;
-}
-
 .works-table td {
   overflow: hidden;
   border-radius: 10px;
+}
+
+.works-table-row1,
+.works-table-row2 {
+  display: grid;
+  padding-top: 1rem;
 }
 
 .works-table-img {
@@ -78,5 +76,40 @@ export default {
 
 .works-table-img:hover {
   transform: scale(1.1);
+}
+
+@media screen and (min-width: 720px) {
+  .works-table-row1 {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1rem;
+  }
+  .works-table-row2 {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .works-table-row1 {
+    grid-template-columns: repeat(1);
+    align-items: center;
+    gap: 1rem;
+  }
+  .works-table-row2 {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .works-table-row1 {
+    gap: 1rem;
+  }
+  .works-table-row2 {
+    gap: 1rem;
+  }
 }
 </style>

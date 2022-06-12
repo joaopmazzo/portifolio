@@ -37,6 +37,7 @@
 <script scoped>
 import Modal from "../shared/modal/Modal.vue";
 import emailjs from "emailjs-com";
+import "normalize.css";
 import "../../assets/styles.css";
 
 export default {

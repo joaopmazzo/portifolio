@@ -19,13 +19,14 @@
           ></a>
         </div>
       </div>
-      <p>&copy; 2021 copyright all right reserved</p>
+      <p>&copy; {{ new Date().getFullYear() }} copyright all right reserved</p>
     </div>
   </footer>
 </template>
 
 <script>
 import "boxicons";
+import "normalize.css";
 import "../../assets/styles.css";
 
 export default {};
